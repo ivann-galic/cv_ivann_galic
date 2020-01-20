@@ -9,6 +9,10 @@
 
 body {
 	margin: 0;
+	background-color: #ebebeb;
+	background-image: url(imgs/background_img.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /* ---------- HEADER ---------- */
@@ -16,7 +20,7 @@ body {
 header {
 	width: 100%;
 	position: fixed;
-	z-index:1000;
+	z-index: 900;
 }
 
 /* *** MENU BAR *** */
@@ -26,7 +30,6 @@ header {
 	display: flex;
 	flex-direction: row;
 	margin: 0;
-
 	width: auto;
 	vertical-align: middle;
 	background-color: whitesmoke;
@@ -126,6 +129,7 @@ header {
 	float: left;
 	top: 0;
 	left:0;
+	z-index: 1000;
 	background-color: whitesmoke;
 	width: 19%;
 	height: 100%;
@@ -164,7 +168,7 @@ header {
 }
 
 #dev {
-	line-height: 23px;
+	line-height: 25px;
 }
 .bgmenuPresentation p {
 	margin-bottom: 8px;
@@ -182,33 +186,38 @@ header {
 	color: #7EADFF;
 }
 
-.bgmenuLiens {
+.bgmenuSectionLiens {
 	margin-top: 40px;
 }
 
-.bgmenuLiens ul{
+.bgmenuSectionLiens ul{
 	list-style: none;
 	padding: 0;
 }
 
-.bgmenuLiens li {
+.bgmenuSectionLiens li {
 	font-size: 17px;
 	padding-left: 40px;
 	margin-top: 3px;
-
 }
 
-.bgmenuLiens a {
+.bgmenuSectionLiens p {
+	display: inline-block;
+	margin-top: 3px;
+	font-size: 17px;
 	line-height: 40px;
-	font-family: "Roboto", sans-serif;
+}
+.bgmenuSectionLiens a {
+	display: inline-block;
+	line-height: 40px;
+	font-family: "Roboto Medium", sans-serif;
 	color: #000000;
 	text-decoration: none;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	font-weight: bold;
 }
 
-.bgmenuLiens a:hover{
+.bgmenuSectionLiens a:hover{
 	color: #546e7a;
 }
 
@@ -237,6 +246,62 @@ header {
 .btnTelecharger a{
 	text-decoration: none;
 }
+
+/* PROFIL */
+.espaceProfil {
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	width: 100%;
+	height: 50%;
+}
+
+.carteProfil {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.profilSectionGauche {
+	width: 40%;
+	height: 100%;
+}
+
+#photoProfil {
+	width: 50%;
+	margin-top: 35px;
+}
+
+#nomProfil {
+	font-family: "Roboto Medium", sans-serif;
+	letter-spacing: 1px;
+	font-size: 22px;
+}
+
+#devProfil{
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.profilPresentation a {
+	margin-top: 25px;
+	margin-right: 14px;
+	margin-left: 14px;
+	font-size: 25px;
+	text-decoration: none;
+	color: #2c79ff;
+}
+
+.profilPresentation a:hover {
+	color: #7EADFF;
+}
+
+
 
 
 
